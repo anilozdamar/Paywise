@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* NAVIGATION*/
+
+.nav1 {
+  background-color: #20656f;
+  font-family: "Poppins", serif;
+}
+
+.links {
+  justify-content: center;
+  margin: 0;
+}
+
+.buttons {
+  justify-content: right;
+}
+
+.signin {
+  color: white;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #20656f;
+}
+
+.signup {
+  background-color: #dad873;
+  color: #309975;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  padding: 0 0.5em 0.25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+nav ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+  background: #dad873; /* the color */
+  scale: 0 1;
+  transition: 0.3s, translate 3s 0.3s;
+}
+nav ul:hover li:before {
+  scale: 1;
+}
+nav ul li:hover:before {
+  translate: 0;
+  transition: 0.3s;
+}
+nav ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+nav ul:hover li:hover ~ li:before {
+  translate: -100% 0;
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+/* NAVIGATION SON*/
+
+/* BÖLÜM 1 */
+
+.anabolum {
+  background: linear-gradient(#20656f, #58b368);
+}
+
+.anabolum-baslik {
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  color: white;
+  margin: 80px 0px 0px 20px;
+  font-size: 3.5rem;
+}
+
+.anabolum-cizgi {
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 75%;
+  max-width: 475px;
+}
+
+.anabolum-altbasliklar {
+  color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#alt1margin {
+  margin-left: 20px;
+}
+
+#alt2margin {
+  margin-left: 125px;
+}
+
+#alt3margin {
+  margin-left: 100px;
+}
+
+#pr1m {
+  margin-left: 20px;
+}
+
+#pr2m {
+  margin-left: 50px;
+}
+
+#pr3m {
+  margin-left: 70px;
+}
+
+.anabolum-paragraf {
+  display: inline-block;
+  color: white;
+}
+
+.anabolum-downloadbutton {
+  display: inline-block;
+  background-color: #dad873;
+  color: #309975;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.anabolum-heroimg {
+  position: absolute;
+  width: 100%;
+  max-width: 950px;
+  right: 50px;
+  top: 108px;
+}
+
+/* BÖLÜM 1 SON*/
+
+/* BÖLÜM 2 */
+
+.bolum2baslik {
+  text-align: center;
+  color: #309975;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.bolum2paragraf {
+  text-align: center;
+}
+
+.bolum2card1 {
+  background-color: #fffff0;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.pedal1 {
+  display: inline-block;
+  color: #575757;
+  background-color: #dad873;
+  border-radius: 10px;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+}
+
+.learnmore {
+  background-color: #f8bf88;
+  border: none;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 15px 40px 15px 40px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.visacard {
+  color: #20656f;
+  background: linear-gradient(#dad873, #ffca63);
+  margin-top: 100px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 342px;
+  height: 205px;
+}
+
+.visa {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 44px;
+  padding: 26px 0px 10px 46px;
+}
+
+.totalbalance {
+  margin-left: 46px;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-weight: bold;
+  margin-left: 46px;
+  font-style: italic;
+}
+
+.pedal2 {
+  display: inline-block;
+  color: #575757;
+  background-color: #ffcdc2;
+  border-radius: 10px;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+}
+
+.visacard2 {
+  color: #20656f;
+  background: linear-gradient(#ffcdc2, #f88888);
+  margin-top: 100px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 342px;
+  height: 205px;
+}
+
+/* BÖLÜM2 SON*/
+
+/* BÖLÜM3 */
+#bol3pr {
+  color: white;
+  margin-left: 134px;
+}
+.bolum3 {
+  margin-top: 100px;
+  background: linear-gradient(#20656f, #58b368);
+}
+
+.bolum3baslik {
+  color: white;
+  margin-left: 134px;
+  margin-top: 119px;
+  margin-bottom: 16px;
+}
+
+.bolum3usd {
+  display: inline-block;
+  margin-top: 133px;
+  margin-left: 210px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-right: 60px;
+}
+
+.bolum3eur {
+  display: inline-block;
+  color: white;
+  margin-left: 210px;
+  font-weight: 400;
+  margin-right: 60px;
+}
+
+.bolum3border {
+  background: none;
+  border: white solid;
+  display: inline-block;
+
+  padding: 10px 10px 0px 10px;
+}
+.bolum3prgrf {
+  position: relative;
+  left: 110px;
+  bottom: 50px;
+  display: inline-block;
+}
+
+#indirim {
+  margin-left: 135px;
+}
+
+.bakici {
+  position: relative;
+  left: 100px;
+  bottom: 50px;
+  display: inline-block;
+}
+
+.onk {
+  display: inline-block;
+
+  margin-right: 50px;
+}
+
+.rub {
+  display: inline-block;
+}
+
+.bolum3border2 {
+  background: none;
+  border: white solid;
+  display: inline-block;
+  padding: 10px 10px 0px 10px;
+  position: relative;
+  left: 43px;
+}
+
+.yuzoniki {
+  display: inline-block;
+  margin-right: 62px;
+}
+
+.exchangemoney {
+  position: relative;
+
+  float: right;
+  right: 334px;
+  background-color: #ffca63;
+  color: #20656f;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 165px;
+  height: 60px;
+
+  margin-bottom: 60px;
+  margin-top: 44px;
+
+  font-weight: 600;
+}
+
+.polygon {
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* BÖLÜM 3 SON */
+
+/* BÖLÜM 4 */
+
+#bolum4baslik{
+  font-size: auto;
+  color: #575757; font-weight: 600
+}
+.bolum4prgrf {
+  font-size: auto;
+  color: #575757
+}
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  max-width: 510px;
+  margin-left: 30%;
+  margin-top: 17%;
+}
+
+.cardboyut {
+  margin-top: 35px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  display: inline-block;
+  background-color: white;
+  padding: 50px 21px 0px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardboyut:hover {
+  background-color: #309975;
+  transition: 500ms;
+  color: white;
+}
+
+.card2 {
+  float: right;
+  margin-bottom: 75px;
+}
+
+.card4 {
+  float: right;
+}
+
+/* BÖLÜM 4 SON */
+
+/* FOOTER */
+
+.footer {
+  background: linear-gradient(#20656f, #58b368);
+  margin-top: 100px;
+  color: white;
+  display: inline-block;
+}
+
+.rightmargin {
+  margin-right: 250px;
+}
+
+.footerbutton {
+  background-color: #dad873;
+  border: none;
+  border-radius: 7px;
+}
+
+.footerkapanis {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.foteroff {
+  font-size: medium
+}
+ 
+#fsace {
+  font-size:25px
+}
+
+.ikonbuyuk {
+  font-size: 25px;
+  padding-left: 25px;
+}
+
+.inpt {
+  width: 70%;
+  max-width: 400px;
+  height: 70px;
+  display: inline-block;
+
+}
+
+.paddingleft {
+  padding-left: 75px;
+  margin-top: 99px;
+}
+
+/* FOOTER SON*/
+
+/* Mobil cihazlar için stil */
+@media (max-width: 768px) {
+  .anabolum-cizgi {
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 180%;
+    max-width: 475px;
+  }
+
+  .anabolum-altbasliklar {
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+
+  .anabolum-baslik {
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: white;
+    margin: 80px 0px 0px 20px;
+    font-size: 3rem;
+    align-items: center;
+  }
+
+  .anabolum-heroimg {
+    visibility: hidden;
+  }
+
+  #alt1margin {
+    margin-left: 20px;
+  }
+
+  #alt2margin {
+    margin-left: 95px;
+  }
+
+  #alt3margin {
+    margin-left: 90px;
+  }
+
+  #pr1m {
+    margin-left: 20px;
+  }
+
+  #pr2m {
+    margin-left: 90px;
+  }
+
+  #pr3m {
+    margin-left: 100px;
+  }
+
+  .anabolum-downloadbutton {
+    margin-left: 125px;
+    background-color: #dad873;
+    color: #309975;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bolum2baslik {
+    text-align: center;
+    color: #309975;
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: 26px;
+  }
+
+  .bolum2paragraf {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .bolum2card1 {
+    background-color: #fffff0;
+
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 75px;
+    margin-bottom: 0px;
+  }
+
+  .bolum3baslik {
+    color: white;
+    margin-left: 20px;
+    margin-top: 75px;
+    margin-bottom: 16px;
+  }
+
+  #bol3pr {
+    color: white;
+    margin-left: 20px;
+  }
+
+  .bolum3prgrf {
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+    display: inline-block;
+  }
+  .bolum4prgrf {
+   
+    font-size: 15px;
+    color: #575757
+  }
+
+  .bolum3usd {
+    display: inline-block;
+    margin-top: 75px;
+    margin-left: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-right: 35px;
+  }
+
+  #indirim {
+    margin-left: 35px;
+  }
+
+  .bolum3eur {
+    display: inline-block;
+    color: white;
+    margin-left: 30px;
+    font-weight: 400;
+    margin-right: 35px;
+    margin-top: 50px;
+  }
+
+  .bolum3prgrf {
+    position: relative;
+    left: 160px;
+    bottom: 45px;
+    display: inline-block;
+  }
+
+  .bakici {
+    position: relative;
+    right: 0px;
+    left: -175px;
+    top: 35px;
+  }
+
+  .bolum3border {
+    background: none;
+    border: white solid;
+    display: inline-block;
+    left: 5px;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+  }
+
+  .bolum3border2 {
+    background: none;
+    border: white solid;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    top: 20px;
+    left: 105px;
+  }
+
+  .exchangemoney {
+    position: relative;
+
+    float: right;
+    top: 30px;
+    left: -110px;
+    background-color: #ffca63;
+    color: #20656f;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+
+    height: 60px;
+
+    margin-bottom: 60px;
+    margin-top: 44px;
+
+    font-weight: 600;
+  }
+
+  .cardboyut {
+    margin-top: 35px;
+    width: 100%;
+
+    height: 250px;
+    display: inline-block;
+    background-color: white;
+    padding: 50px 21px 0px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card2 {
+    float: none;
+    margin-bottom: 75px;
+  }
+
+  .card4 {
+    float: none;
+  }
+
+  .rightmargin {
+    margin-right: 250px;
+  }
+
+  .paddingleft {
+    padding-left: 30px;
+    margin-top: 99px;
+  }
+
+  .inpt {
+    width: 60%;
+    display: inline-block;
+    height: 70px;
+  }
+
+  .footerbutton {
+    background-color: #dad873;
+    border: none;
+    border-radius: 7px;
+    display: inline-block;
+    width: 20%;
+  }
+
+  .foteroff {
+    font-size: 10px;
+   
+  }
+
+  .ikonbuyuk {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
+  #fsace {
+    font-size:15px
+  }
+
+  #bolum4baslik{
+    font-size: 26px;
+}
+
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+ margin-top: 560px;
+  left: -85px;
+}
+
+
+}
